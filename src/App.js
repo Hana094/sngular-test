@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <NumberContextProvider>
-        <Form />
-        <ResultCalculator />
+        <div className="content-container-box">
+          <Form />
+          <ResultCalculator />
+        </div>
       </NumberContextProvider>
     </div>
   );

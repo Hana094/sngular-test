@@ -13,16 +13,14 @@ export default function Form() {
   return (
     <div className="form-container">
       <h1>Sngular Test</h1>
-      <div>
-        <form onSubmit={calculateSeries}>
-          <input
-            type="number"
-            name="number"
-            onKeyDown={preventNotNumberCharacter}
-          ></input>
-          <button>Calculate</button>
-        </form>
-      </div>
+      <form className="input-container" onSubmit={calculateSeries}>
+        <input
+          type="number"
+          name="number"
+          onKeyDown={preventNotNumberCharacter}
+        ></input>
+        <button>Calculate</button>
+      </form>
     </div>
   );
 }
